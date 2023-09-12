@@ -1,6 +1,6 @@
 module Lockbox
   class Encryptor
-    def initialize(**options)
+    def initialize(options={})
       options = Lockbox.default_options.merge(options)
       @encode = options.delete(:encode)
       # option may be renamed to binary: true

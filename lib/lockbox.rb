@@ -76,8 +76,8 @@ module Lockbox
     str.unpack1("H*")
   end
 
-  def self.new(**options)
-    Encryptor.new(**options)
+  def self.new(options={})
+    Encryptor.new(options)
   end
 
   def self.encrypts_action_text_body(**options)
