@@ -92,7 +92,7 @@ module Lockbox
     str.unpack("H*").first
   end
 
-  def self.new(**options)
-    Encryptor.new(**options)
+  def self.new(options={})
+    Encryptor.new(options)
   end
 end
